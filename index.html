@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giri Prasath — Frontend Developer & Web Designer</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <h1 class="loader-name">Giri Prasath</h1>
+    <div class="loader-track"><div class="loader-bar" id="loaderBar"></div></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Giri Prasath</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="nav-btn">Hire Me</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+      <a href="#services" onclick="closeMobile()">Services</a>
+      <a href="#contact" class="mobile-hire-btn" onclick="closeMobile()">Hire Me</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+      <div class="hero-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+      </div>
+      <div class="hero-grid fade-in">
+        <div class="hero-left">
+          <div class="available-badge">
+            <span class="green-dot"></span>
+            <span>Available for Freelance Work</span>
+          </div>
+          <h1 class="hero-title">Hi, I'm<br/><span>Giri Prasath</span></h1>
+          <p class="typewriter-line"><span id="typewriter"></span><span class="cursor"></span></p>
+          <div class="hero-location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Chennai, Tamil Nadu, India
+          </div>
+          <p class="hero-desc">I design and develop modern, responsive, and user-focused websites that help businesses, brands, and individuals build a strong digital presence.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+          </div>
+          <div class="hero-stats">
+            <div><span class="stat-num">10+</span><span class="stat-label">Projects Done</span></div>
+            <div class="stat-divider"></div>
+            <div><span class="stat-num">5+</span><span class="stat-label">Websites Live</span></div>
+            <div class="stat-divider"></div>
+            <div><span class="stat-num">100%</span><span class="stat-label">Client Focus</span></div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-inner">
+              <img src="giri-prasath.png" alt="Giri Prasath" class="hero-photo" />
+            </div>
+            <div class="float-badge badge-tl float-up">
+              <div class="badge-circle">3+</div>
+              <span>Years Experience</span>
+            </div>
+            <div class="float-badge badge-br float-down">
+              <span class="pulse-dot"></span>
+              <span>Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-inner" id="marqueeInner">
+          <span>HTML5</span><span class="dot">•</span>
+          <span>CSS3</span><span class="dot">•</span>
+          <span>JAVASCRIPT</span><span class="dot">•</span>
+          <span>RESPONSIVE DESIGN</span><span class="dot">•</span>
+          <span>WEB DESIGN</span><span class="dot">•</span>
+          <span>UI DESIGN</span><span class="dot">•</span>
+          <span>FRONTEND DEVELOPMENT</span><span class="dot">•</span>
+          <span>GITHUB</span><span class="dot">•</span>
+          <span>DEPLOYMENT</span><span class="dot">•</span>
+          <span>PORTFOLIO DEVELOPMENT</span><span class="dot">•</span>
+          <!-- duplicate for seamless loop -->
+          <span>HTML5</span><span class="dot">•</span>
+          <span>CSS3</span><span class="dot">•</span>
+          <span>JAVASCRIPT</span><span class="dot">•</span>
+          <span>RESPONSIVE DESIGN</span><span class="dot">•</span>
+          <span>WEB DESIGN</span><span class="dot">•</span>
+          <span>UI DESIGN</span><span class="dot">•</span>
+          <span>FRONTEND DEVELOPMENT</span><span class="dot">•</span>
+          <span>GITHUB</span><span class="dot">•</span>
+          <span>DEPLOYMENT</span><span class="dot">•</span>
+          <span>PORTFOLIO DEVELOPMENT</span><span class="dot">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="section-bg-text">ABOUT</div>
+      <div class="about-grid">
+        <div class="about-photo-col reveal">
+          <div class="about-photo-frame">
+            <div class="corner tl"></div><div class="corner tr"></div>
+            <div class="corner bl"></div><div class="corner br"></div>
+            <img src="giri-prasath.png" alt="Giri Prasath" />
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Crafting digital experiences with precision.</h2>
+          <div class="about-paras">
+            <p>I am a Frontend Developer and Web Designer passionate about building high-quality digital experiences. My journey in web development started with a curiosity for design and technology, which gradually evolved into creating websites that are both visually appealing and highly functional.</p>
+            <p>I specialize in designing responsive websites that work seamlessly across desktops, tablets, and mobile devices. My goal is to help businesses and individuals establish a professional online presence through modern design principles and user-friendly interfaces.</p>
+            <p>I continuously explore new technologies, design trends, and development practices to improve my skills and deliver better solutions with every project.</p>
+          </div>
+          <div class="about-list">
+            <div class="about-list-item"><span class="list-dot"></span>Responsive Web Design</div>
+            <div class="about-list-item"><span class="list-dot"></span>Modern UI Development</div>
+            <div class="about-list-item"><span class="list-dot"></span>GitHub Pages Deployment</div>
+            <div class="about-list-item"><span class="list-dot"></span>Custom Domain Setup</div>
+            <div class="about-list-item"><span class="list-dot"></span>Performance Optimization</div>
+            <div class="about-list-item"><span class="list-dot"></span>User-Centered Design</div>
+          </div>
+          <div class="about-numbers">
+            <span>10+ Projects</span>
+            <span>5+ Websites</span>
+            <span>100% Client Focus</span>
+            <span>1+ Year Experience</span>
+          </div>
+          <a href="#contact" class="btn-primary">Let's Work Together →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Profile -->
+    <section class="section profile-section">
+      <div class="max-w">
+        <div class="profile-header">
+          <span class="section-label">My Profile</span>
+          <h2 class="section-title">Professional Profile</h2>
+          <p class="section-sub">A developer and designer committed to clean, reliable, and modern digital solutions.</p>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-card reveal">
+            <div class="profile-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Frontend Developer</h3>
+            <p>Practical experience in website design and deployment, crafting modern user interfaces that perform well and look great.</p>
+          </div>
+          <div class="profile-card reveal">
+            <div class="profile-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Responsive Design Specialist</h3>
+            <p>Skilled in creating responsive and modern UIs that adapt seamlessly to any screen size, from mobile to widescreen.</p>
+          </div>
+          <div class="profile-card reveal">
+            <div class="profile-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <h3>GitHub Pages &amp; Deployment</h3>
+            <p>Experience deploying and managing live websites using GitHub Pages and custom domain integration for production environments.</p>
+          </div>
+          <div class="profile-card reveal">
+            <div class="profile-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <h3>Design &amp; Usability Focus</h3>
+            <p>Strong understanding of web design principles, usability standards, and performance optimization for fast, accessible websites.</p>
+          </div>
+          <div class="profile-card reveal">
+            <div class="profile-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Clean &amp; Reliable Solutions</h3>
+            <p>Dedicated to delivering professional, clean, and reliable digital products — with every detail considered and every line reviewed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+      <div class="section-bg-text" style="right:0;left:auto;transform:translateX(25%)">SKILLS</div>
+      <div class="max-w skills-grid">
+        <div class="reveal">
+          <span class="section-label">Technical Expertise</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub" style="max-width:400px">A toolkit built for modern web development and digital design.</p>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar-header"><span>Frontend Development</span><span class="skill-pct">95%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-header"><span>UI Design</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-header"><span>Responsive Design</span><span class="skill-pct">92%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-header"><span>Website Deployment</span><span class="skill-pct">88%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-header"><span>GitHub &amp; Version Control</span><span class="skill-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-tags-col reveal">
+          <div class="skill-group">
+            <h4>FRONTEND DEVELOPMENT</h4>
+            <div class="tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>Responsive Web Design</span><span>Mobile-First Development</span><span>Cross-Browser Compatibility</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>DESIGN &amp; UI</h4>
+            <div class="tags">
+              <span>User Interface Design</span><span>Website Layout Design</span>
+              <span>Visual Branding</span><span>User Experience Principles</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>TOOLS &amp; PLATFORMS</h4>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>GitHub Pages</span><span>Visual Studio Code</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>PRODUCTIVITY</h4>
+            <div class="tags">
+              <span>Microsoft Word</span><span>Microsoft Excel</span><span>Google Workspace</span>
+              <span>Data Entry</span><span>Typewriting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section projects-section">
+      <div class="section-bg-text" style="left:0">PROJECTS</div>
+      <div class="max-w">
+        <div class="section-header-center reveal">
+          <span class="section-label">Featured Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-sub">Technical projects showcasing problem-solving ability and development depth.</p>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="project-row reveal">
+          <div class="project-mockup">
+            <div class="browser-chrome">
+              <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            </div>
+            <div class="project-screen project-screen-img">
+              <img src="music-genre-classification.jpg" alt="Music Genre Classification using Machine Learning" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" />
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">01</div>
+            <h3>Music Genre Classification System</h3>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>ML</span>
+            </div>
+            <p>A Music Genre Classification project built using Machine Learning to automatically predict a song's genre. The system performs audio feature analysis and dataset processing, then applies classification algorithms and evaluates model performance for accurate genre prediction.</p>
+            <ul class="project-highlights">
+              <li>Music Genre Classification using Machine Learning</li>
+              <li>Audio Feature Analysis</li>
+              <li>Genre Prediction</li>
+              <li>Dataset Processing</li>
+              <li>Classification Algorithms</li>
+              <li>Performance Evaluation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-row project-row-reverse reveal">
+          <div class="project-info">
+            <div class="project-num">02</div>
+            <h3>Smart Street Light System</h3>
+            <div class="project-tags">
+              <span>Arduino</span><span>Sensors</span><span>Embedded Systems</span><span>IoT</span>
+            </div>
+            <p>A Smart Street Light Automation system that uses sensor-based control to enable energy efficient lighting. The system performs automatic brightness adjustment based on real-time conditions, with IoT-based monitoring supporting wider smart city applications.</p>
+            <ul class="project-highlights">
+              <li>Smart Street Light Automation</li>
+              <li>Sensor-based Control</li>
+              <li>Energy Efficient Lighting</li>
+              <li>Automatic Brightness Adjustment</li>
+              <li>IoT-Based Monitoring</li>
+              <li>Smart City Applications</li>
+            </ul>
+          </div>
+          <div class="project-mockup">
+            <div class="browser-chrome">
+              <span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span>
+            </div>
+            <div class="project-screen project-screen-img">
+              <img src="smart-street-light.jpg" alt="Smart Street Light Automation System" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Website Portfolio -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="section-bg-text" style="left:0">PORTFOLIO</div>
+      <div class="max-w">
+        <div class="reveal">
+          <span class="section-label">Projects & Websites</span>
+          <h2 class="section-title">Portfolio Showcase</h2>
+          <p class="section-sub">Complete showcase of all projects, websites, and technical implementations.</p>
+        </div>
+        <div class="portfolio-grid portfolio-grid-2col">
+          <!-- Website 1: Echos Moments -->
+          <div class="portfolio-card reveal">
+            <div class="portfolio-browser">
+              <div class="pb-chrome">
+                <div class="pb-dots"><span class="pb-dot r"></span><span class="pb-dot y"></span><span class="pb-dot g"></span></div>
+                <div class="pb-url">giriwebsitedesigner.github.io/echosmoments/</div>
+                <div></div>
+              </div>
+              <div class="pb-screen pb-screen-img">
+                <img src="echosmoments-preview.jpg" alt="Echos Moments website preview" loading="lazy" style="width:100%;height:100%;object-fit:contain;object-position:top;" />
+              </div>
+            </div>
+            <h3>ECHOS MOMENTS</h3>
+            <p>A professional branding and business growth website showcasing creative services, digital marketing solutions, and business development offerings with modern design and smooth animations.</p>
+            <a href="https://giriwebsitedesigner.github.io/echosmoments/" target="_blank" rel="noopener noreferrer" class="visit-link">
+              Visit Website
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+
+          <!-- Website 2: Green Life Home Health -->
+          <div class="portfolio-card reveal">
+            <div class="portfolio-browser">
+              <div class="pb-chrome">
+                <div class="pb-dots"><span class="pb-dot r"></span><span class="pb-dot y"></span><span class="pb-dot g"></span></div>
+                <div class="pb-url">greenlifehomehealth.com</div>
+                <div></div>
+              </div>
+              <div class="pb-screen pb-screen-img">
+                <img src="greenlife-homehealth-preview.jpg" alt="Green Life Home Health Care website preview" loading="lazy" style="width:100%;height:100%;object-fit:contain;object-position:top;" />
+              </div>
+            </div>
+            <h3>Green Life Home Health Care</h3>
+            <p>A healthcare service website focused on providing home healthcare solutions and patient support services, deployed on a custom domain with responsive design and accessibility features.</p>
+            <a href="https://greenlifehomehealth.com" target="_blank" rel="noopener noreferrer" class="visit-link">
+              Visit Website
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services-section">
+      <div class="section-bg-text" style="right:0;left:auto;transform:translateX(25%);top:0">SERVICES</div>
+      <div class="max-w">
+        <div class="section-header-center reveal">
+          <span class="section-label">What I Offer</span>
+          <h2 class="section-title">Services</h2>
+          <p class="section-sub">End-to-end web solutions for businesses, brands, and individuals.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <h3>Website Design</h3>
+            <p>Modern, visually compelling designs tailored to your brand identity and business goals.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Clean, performant HTML, CSS, and JavaScript code that brings designs to life with precision.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Portfolio Website Development</h3>
+            <p>Distinctive personal portfolios that showcase your work, skills, and personality professionally.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Business Website Development</h3>
+            <p>Professional business sites designed to attract clients, build trust, and drive growth.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+            </div>
+            <h3>Website Deployment</h3>
+            <p>Seamless deployment via GitHub Pages and custom domain setup for a professional live presence.</p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3>Data Entry &amp; Documentation</h3>
+            <p>Accurate and organized data entry, documentation, and content management support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Work With Me -->
+    <section class="section why-section">
+      <div class="max-w">
+        <div class="section-header-center reveal">
+          <span class="section-label">The Difference</span>
+          <h2 class="section-title">Why Work With Me</h2>
+          <p class="section-sub">The values and work ethic I bring to every project.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <div><h3>Professional &amp; Modern Designs</h3><p>Every design is crafted with current standards and a professional aesthetic that stands out.</p></div>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div><h3>Mobile-First &amp; Responsive</h3><p>All websites are built to work flawlessly across all devices and screen sizes.</p></div>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div><h3>Clean &amp; Optimized Code</h3><p>Well-structured, efficient code that loads fast and performs reliably across all browsers.</p></div>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div><h3>On-Time Delivery</h3><p>Committed to deadlines and clear communication throughout every project.</p></div>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div><h3>Client-Centered Approach</h3><p>Your goals and vision guide every decision in the design and development process.</p></div>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+            <div><h3>Continuous Improvement</h3><p>Always learning, adapting, and applying new techniques to deliver better results.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-circle c1"></div>
+      <div class="cta-circle c2"></div>
+      <div class="cta-inner">
+        <h2>READY TO BUILD SOMETHING EXCEPTIONAL?</h2>
+        <p>Let's transform your ideas into meaningful digital experiences.</p>
+        <a href="#contact" class="cta-btn">LET'S WORK TOGETHER</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="section-bg-text">CONTACT</div>
+      <div class="max-w contact-grid">
+        <div class="reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Talk</h2>
+          <p class="section-sub">Open to freelance projects, collaborations, and new opportunities.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div><h4>Location</h4><p>Chennai, Tamil Nadu, India</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div><h4>Email</h4><a href="mailto:websitedesignerwolf@gmail.com" style="color:#111;font-weight:600;font-size:0.95rem;transition:color 0.2s;" onmouseover="this.style.color='#555'" onmouseout="this.style.color='#111'">websitedesignerwolf@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <h4>Social</h4>
+                <div class="social-links">
+                  <a href="https://github.com/giriwebsitedesigner" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="#" class="linkedin-link">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fname">Full Name *</label>
+                <input type="text" id="fname" placeholder="e.g. Giri Prasath" autocomplete="name" />
+                <span class="form-error" id="fname-err"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="fphone">Phone Number *</label>
+                <input type="tel" id="fphone" placeholder="e.g. +91 9876543210" autocomplete="tel" />
+                <span class="form-error" id="fphone-err"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="femail">Email Address *</label>
+              <input type="email" id="femail" placeholder="e.g. yourname@email.com" autocomplete="email" />
+              <span class="form-error" id="femail-err"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fservice">Service Needed *</label>
+                <select id="fservice" class="form-select">
+                  <option value="">Select a service...</option>
+                  <option value="Website Design">Website Design</option>
+                  <option value="Frontend Development">Frontend Development</option>
+                  <option value="Portfolio Website">Portfolio Website</option>
+                  <option value="Business Website">Business Website</option>
+                  <option value="Website Deployment">Website Deployment</option>
+                  <option value="Data Entry & Documentation">Data Entry &amp; Documentation</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="form-error" id="fservice-err"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="fbudget">Budget Range</label>
+                <select id="fbudget" class="form-select">
+                  <option value="Not specified">Prefer not to say</option>
+                  <option value="Under ₹5,000">Under ₹5,000</option>
+                  <option value="₹5,000 – ₹15,000">₹5,000 – ₹15,000</option>
+                  <option value="₹15,000 – ₹30,000">₹15,000 – ₹30,000</option>
+                  <option value="₹30,000+">₹30,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fsubject">Subject *</label>
+              <input type="text" id="fsubject" placeholder="e.g. I need a portfolio website" />
+              <span class="form-error" id="fsubject-err"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ftimeline">Project Timeline</label>
+              <select id="ftimeline" class="form-select">
+                <option value="Flexible">Flexible / Not sure yet</option>
+                <option value="ASAP">As soon as possible</option>
+                <option value="1–2 weeks">1–2 weeks</option>
+                <option value="1 month">Within 1 month</option>
+                <option value="2+ months">2+ months</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fmessage">Your Message *</label>
+              <textarea id="fmessage" placeholder="Tell me about your project — what you need, your goals, any specific features or design preferences..." rows="6"></textarea>
+              <span class="form-error" id="fmessage-err"></span>
+            </div>
+            <button type="submit" class="form-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9l20-7z"/></svg>
+              Send via WhatsApp
+            </button>
+            <p class="form-note">All fields marked * are required. Your details will be sent directly to my WhatsApp.</p>
+            <div id="form-success" class="form-success hidden">✓ Redirecting to WhatsApp with your details...</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="max-w footer-grid">
+      <div>
+        <div class="footer-logo">Giri Prasath</div>
+        <p class="footer-tagline">Crafting digital experiences, one pixel at a time.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="https://github.com/giriwebsitedesigner" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" class="linkedin-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 Giri Prasath. Designed &amp; Built with precision.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
